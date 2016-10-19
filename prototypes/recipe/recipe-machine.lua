@@ -36,7 +36,7 @@ data:extend({
     ingredients = 
 	{
 	  {"electric-furnace-mk2", 1},
-	  {"titanium-plate", 20}, 
+	  {"titanium-alloy", 20}, 
 	  {"effectivity-module-3", 2},
 	  {"processing-unit", 5},
 	  {"pollution-filter", 1}
@@ -96,7 +96,7 @@ data:extend({
       {"processing-unit", 5},
       {"speed-module-2", 2},
 	  {"effectivity-module-3", 2},
-	  {"titanium-plate", 25},
+	  {"titanium-alloy", 25},
 	  {"pollution-filter", 1}
     },
     result = "oil-refinery-mk3",
@@ -129,7 +129,7 @@ data:extend({
       {"processing-unit", 5},
       {"speed-module-2", 2},
 	  {"effectivity-module-3", 2},
-	  {"titanium-plate", 25},
+	  {"titanium-alloy", 25},
 	  {"pollution-filter", 1}
     },
     result= "chemical-plant-mk3"
@@ -163,9 +163,14 @@ data:extend({
 	  {"pumpjack", 1},
       {"steel-plate", 15},
       {"advanced-circuit", 10},
-      {"pipe-mk2", 5}
+      {"pipe", 10}
     },
     result = "pumpjack-mk2",
     enabled = true
   }
 })
+
+if data.raw.item["pipe-mk2"] then
+	factorioextended.core.remove_recipe_item ("pumpjack-mk2", "pipe")
+	factorioextended.core.add_recipe_item ("pumpjack-mk2", {"pipe-mk2", 5})
+end
