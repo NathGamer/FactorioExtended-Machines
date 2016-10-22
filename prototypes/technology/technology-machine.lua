@@ -31,6 +31,10 @@ data:extend(
 	  {
         type = "unlock-recipe",
         recipe = "basic-mining-drill-mk2"
+      },
+	  {
+        type = "unlock-recipe",
+        recipe = "pumpjack-mk2"
       }
     },
     unit =

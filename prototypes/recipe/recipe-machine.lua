@@ -158,6 +158,7 @@ data:extend({
     type = "recipe",
     name = "pumpjack-mk2",
     energy_required = 20,
+    enabled = false,
     ingredients =
     {
 	  {"pumpjack", 1},
@@ -165,8 +166,7 @@ data:extend({
       {"advanced-circuit", 10},
       {"pipe", 10}
     },
-    result = "pumpjack-mk2",
-    enabled = true
+    result = "pumpjack-mk2"
   }
 })
 
