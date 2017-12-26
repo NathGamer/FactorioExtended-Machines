@@ -1,8 +1,11 @@
+require ("circuit-connector-generated-definitions")
+
 data:extend({
   {
     type = "radar",
     name = "radar-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/radar-mk2.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/radar-mk2.png",
+    icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "radar-mk2"},
     max_health = 300,
@@ -28,7 +31,7 @@ data:extend({
     energy_usage = "450kW",
     pictures =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/machine/radar-mk2.png",
+      filename = "__FactorioExtended-Machines__/graphics/entity/radar-mk2.png",
       priority = "low",
       width = 153,
       height = 131,
@@ -53,7 +56,8 @@ data:extend({
   {
     type = "furnace",
     name = "electric-furnace-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/electric-furnace-mk2.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/electric-furnace-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "electric-furnace-mk2"},
     max_health = 450,
@@ -98,7 +102,7 @@ data:extend({
     },
     animation =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/machine/electric-furnace-mk2-base.png",
+      filename = "__FactorioExtended-Machines__/graphics/entity/electric-furnace-mk2-base.png",
       priority = "high",
       width = 129,
       height = 100,
@@ -110,7 +114,7 @@ data:extend({
       {
         animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/electric-furnace-mk2-heater.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/electric-furnace-mk2-heater.png",
           priority = "high",
           width = 25,
           height = 15,
@@ -150,7 +154,8 @@ data:extend({
   {
     type = "furnace",
     name = "electric-furnace-mk3",
-    icon = "__FactorioExtended-Core__/graphics/icons/electric-furnace-mk3.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/electric-furnace-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "electric-furnace-mk3"},
     max_health = 900,
@@ -195,7 +200,7 @@ data:extend({
     },
     animation =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/machine/electric-furnace-mk3-base.png",
+      filename = "__FactorioExtended-Machines__/graphics/entity/electric-furnace-mk3-base.png",
       priority = "high",
       width = 129,
       height = 100,
@@ -207,7 +212,7 @@ data:extend({
       {
         animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/electric-furnace-mk3-heater.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/electric-furnace-mk3-heater.png",
           priority = "high",
           width = 25,
           height = 15,
@@ -249,7 +254,8 @@ data:extend({
   {
     type = "assembling-machine",
     name = "assembling-machine-4",
-    icon = "__FactorioExtended-Core__/graphics/icons/assembling-machine-4.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/assembling-machine-4.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-4"},
     max_health = 300,
@@ -305,7 +311,7 @@ data:extend({
     fast_replaceable_group = "assembling-machine",
     animation =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/machine/assembling-machine-4.png",
+      filename = "__FactorioExtended-Machines__/graphics/entity/assembling-machine-4.png",
       priority = "high",
       width = 142,
       height = 113,
@@ -332,7 +338,8 @@ data:extend({
   {
     type = "assembling-machine",
     name = "assembling-machine-5",
-    icon = "__FactorioExtended-Core__/graphics/icons/assembling-machine-5.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/assembling-machine-5.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-5"},
     max_health = 600,
@@ -388,7 +395,7 @@ data:extend({
     fast_replaceable_group = "assembling-machine",
     animation =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/machine/assembling-machine-5.png",
+      filename = "__FactorioExtended-Machines__/graphics/entity/assembling-machine-5.png",
       priority = "high",
       width = 142,
       height = 113,
@@ -404,7 +411,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions = 0.03 / 7
     },
-    energy_usage = "210kW",
+    energy_usage = "330kW",
     ingredient_count = 6,
     module_specification =
     {
@@ -417,7 +424,8 @@ data:extend({
   {
     type = "assembling-machine",
     name = "oil-refinery-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/oil-refinery-mk2.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/oil-refinery-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "oil-refinery-mk2"},
     max_health = 600,
@@ -429,6 +437,7 @@ data:extend({
     {
       module_slots = 4
     },
+    scale_entity_info_icon = true,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"oil-processing"},
     crafting_speed = 2,
@@ -441,62 +450,77 @@ data:extend({
     },
     energy_usage = "460kW",
     ingredient_count = 4,
-    animation =
+	
+	
+    animation = make_4way_animation_from_spritesheet({ layers =
     {
-      north =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/oil-refinery-mk2.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/oil-refinery/oil-refinery-mk2.png",
         width = 337,
         height = 255,
         frame_count = 1,
-        shift = {2.515625, 0.484375}
+        shift = {2.515625, 0.484375},
+        hr_version = {
+          filename = "__FactorioExtended-Machines__/graphics/entity/oil-refinery/hr-oil-refinery-mk2.png",
+          width = 386,
+          height = 430,
+          frame_count = 1,
+          shift = util.by_pixel(0, -7.5),
+          scale = 0.5
+        }
       },
-      east =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/oil-refinery-mk2.png",
-        x = 337,
+        filename = "__base__/graphics/entity/oil-refinery/oil-refinery-shadow.png",
         width = 337,
-        height = 255,
+        height = 213,
         frame_count = 1,
-        shift = {2.515625, 0.484375}
-      },
-      south =
-      {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/oil-refinery-mk2.png",
-        x = 674,
-        width = 337,
-        height = 255,
-        frame_count = 1,
-        shift = {2.515625, 0.484375}
-      },
-      west =
-      {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/oil-refinery-mk2.png",
-        x = 1011,
-        width = 337,
-        height = 255,
-        frame_count = 1,
-        shift = {2.515625, 0.484375}
+        shift = util.by_pixel(82.5, 26.5),
+        draw_as_shadow = true,
+        hr_version = {
+          filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-shadow.png",
+          width = 674,
+          height = 426,
+          frame_count = 1,
+          shift = util.by_pixel(82.5, 26.5),
+          draw_as_shadow = true,
+          scale = 0.5
+        }
       }
-    },
+    }}),
+
+
+
+
+
+
     working_visualisations =
     {
       {
-        north_position = {1.03125, -1.55},
-        east_position = {-1.65625, -1.3},
-        south_position = {-1.875, -2.0},
-        west_position = {1.8437, -1.2},
+        north_position = util.by_pixel(34, -65),
+        east_position = util.by_pixel(-52, -61),
+        south_position = util.by_pixel(-59, -82),
+        west_position = util.by_pixel(57, -58),
         animation =
         {
           filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
-          frame_count = 29,
-          width = 16,
-          height = 35,
-          scale = 1.5,
-          shift = {0, -0.5625},
-          run_mode="backward"
+          line_length = 10,
+          width = 20,
+          height = 40,
+          frame_count = 60,
+          animation_speed = 0.75,
+          shift = util.by_pixel(0, -14),
+          hr_version = {
+            filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
+            line_length = 10,
+            width = 40,
+            height = 81,
+            frame_count = 60,
+            animation_speed = 0.75,
+            scale = 0.5,
+            shift = util.by_pixel(0, -14.25),
+          },
         },
-        light = {intensity = 0.4, size = 6}
+        light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
       }
     },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
@@ -546,7 +570,8 @@ data:extend({
   {
     type = "assembling-machine",
     name = "oil-refinery-mk3",
-    icon = "__FactorioExtended-Core__/graphics/icons/oil-refinery-mk3.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/oil-refinery-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "oil-refinery-mk3"},
     max_health = 900,
@@ -558,6 +583,7 @@ data:extend({
     {
       module_slots = 4
     },
+    scale_entity_info_icon = true,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"oil-processing"},
     crafting_speed = 4,
@@ -570,62 +596,77 @@ data:extend({
     },
     energy_usage = "420kW",
     ingredient_count = 4,
-    animation =
+	
+	
+    animation = make_4way_animation_from_spritesheet({ layers =
     {
-      north =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/oil-refinery-mk3.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/oil-refinery/oil-refinery-mk3.png",
         width = 337,
         height = 255,
         frame_count = 1,
-        shift = {2.515625, 0.484375}
+        shift = {2.515625, 0.484375},
+        hr_version = {
+          filename = "__FactorioExtended-Machines__/graphics/entity/oil-refinery/hr-oil-refinery-mk3.png",
+          width = 386,
+          height = 430,
+          frame_count = 1,
+          shift = util.by_pixel(0, -7.5),
+          scale = 0.5
+        }
       },
-      east =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/oil-refinery-mk3.png",
-        x = 337,
+        filename = "__base__/graphics/entity/oil-refinery/oil-refinery-shadow.png",
         width = 337,
-        height = 255,
+        height = 213,
         frame_count = 1,
-        shift = {2.515625, 0.484375}
-      },
-      south =
-      {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/oil-refinery-mk3.png",
-        x = 674,
-        width = 337,
-        height = 255,
-        frame_count = 1,
-        shift = {2.515625, 0.484375}
-      },
-      west =
-      {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/oil-refinery-mk3.png",
-        x = 1011,
-        width = 337,
-        height = 255,
-        frame_count = 1,
-        shift = {2.515625, 0.484375}
+        shift = util.by_pixel(82.5, 26.5),
+        draw_as_shadow = true,
+        hr_version = {
+          filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-shadow.png",
+          width = 674,
+          height = 426,
+          frame_count = 1,
+          shift = util.by_pixel(82.5, 26.5),
+          draw_as_shadow = true,
+          scale = 0.5
+        }
       }
-    },
+    }}),
+
+
+
+
+
+
     working_visualisations =
     {
       {
-        north_position = {1.03125, -1.55},
-        east_position = {-1.65625, -1.3},
-        south_position = {-1.875, -2.0},
-        west_position = {1.8437, -1.2},
+        north_position = util.by_pixel(34, -65),
+        east_position = util.by_pixel(-52, -61),
+        south_position = util.by_pixel(-59, -82),
+        west_position = util.by_pixel(57, -58),
         animation =
         {
           filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
-          frame_count = 29,
-          width = 16,
-          height = 35,
-          scale = 1.5,
-          shift = {0, -0.5625},
-          run_mode="backward"
+          line_length = 10,
+          width = 20,
+          height = 40,
+          frame_count = 60,
+          animation_speed = 0.75,
+          shift = util.by_pixel(0, -14),
+          hr_version = {
+            filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
+            line_length = 10,
+            width = 40,
+            height = 81,
+            frame_count = 60,
+            animation_speed = 0.75,
+            scale = 0.5,
+            shift = util.by_pixel(0, -14.25),
+          },
         },
-        light = {intensity = 0.4, size = 6}
+        light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
       }
     },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
@@ -677,7 +718,8 @@ data:extend({
   {
     type = "assembling-machine",
     name = "chemical-plant-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/chemical-plant-mk2.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/chemical-plant-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-plant-mk2"},
     max_health = 600,
@@ -694,7 +736,7 @@ data:extend({
     {
       north =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/chemical-plant-mk2.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/chemical-plant-mk2.png",
         width = 156,
         height = 141,
         frame_count = 1,
@@ -702,7 +744,7 @@ data:extend({
       },
       west =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/chemical-plant-mk2.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/chemical-plant-mk2.png",
         x = 468,
         width = 156,
         height = 141,
@@ -711,7 +753,7 @@ data:extend({
       },
       south =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/chemical-plant-mk2.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/chemical-plant-mk2.png",
         x = 312,
         width = 156,
         height = 141,
@@ -720,7 +762,7 @@ data:extend({
       },
       east =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/chemical-plant-mk2.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/chemical-plant-mk2.png",
         x = 156,
         width = 156,
         height = 141,
@@ -737,7 +779,7 @@ data:extend({
         east_position = {-0.3, 0.02},
         animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/boiling-blue-patch.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/boiling-blue-patch.png",
           frame_count = 35,
           width = 17,
           height = 12,
@@ -751,14 +793,14 @@ data:extend({
         east_position = {-0.3, 0.55},
         north_animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/boiling-window-blue-patch.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/boiling-window-blue-patch.png",
           frame_count = 1,
           width = 21,
           height = 10
         },
         east_animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/boiling-window-blue-patch.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/boiling-window-blue-patch.png",
           x = 21,
           frame_count = 1,
           width = 21,
@@ -766,7 +808,7 @@ data:extend({
         },
         south_animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/boiling-window-blue-patch.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/boiling-window-blue-patch.png",
           x = 42,
           frame_count = 1,
           width = 21,
@@ -830,7 +872,8 @@ data:extend({
   {
     type = "assembling-machine",
     name = "chemical-plant-mk3",
-    icon = "__FactorioExtended-Core__/graphics/icons/chemical-plant-mk3.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/chemical-plant-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-plant-mk3"},
     max_health = 900,
@@ -847,7 +890,7 @@ data:extend({
     {
       north =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/chemical-plant-mk3.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/chemical-plant-mk3.png",
         width = 156,
         height = 141,
         frame_count = 1,
@@ -855,7 +898,7 @@ data:extend({
       },
       west =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/chemical-plant-mk3.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/chemical-plant-mk3.png",
         x = 468,
         width = 156,
         height = 141,
@@ -864,7 +907,7 @@ data:extend({
       },
       south =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/chemical-plant-mk3.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/chemical-plant-mk3.png",
         x = 312,
         width = 156,
         height = 141,
@@ -873,7 +916,7 @@ data:extend({
       },
       east =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/chemical-plant-mk3.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/chemical-plant-mk3.png",
         x = 156,
         width = 156,
         height = 141,
@@ -890,7 +933,7 @@ data:extend({
         east_position = {-0.3, 0.02},
         animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/boiling-red-patch.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/boiling-red-patch.png",
           frame_count = 35,
           width = 17,
           height = 12,
@@ -904,14 +947,14 @@ data:extend({
         east_position = {-0.3, 0.55},
         north_animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/boiling-window-red-patch.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/boiling-window-red-patch.png",
           frame_count = 1,
           width = 21,
           height = 10
         },
         east_animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/boiling-window-red-patch.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/boiling-window-red-patch.png",
           x = 21,
           frame_count = 1,
           width = 21,
@@ -919,7 +962,7 @@ data:extend({
         },
         south_animation =
         {
-          filename = "__FactorioExtended-Core__/graphics/entity/machine/boiling-window-red-patch.png",
+          filename = "__FactorioExtended-Machines__/graphics/entity/boiling-window-red-patch.png",
           x = 42,
           frame_count = 1,
           width = 21,
@@ -985,7 +1028,8 @@ data:extend({
   {
     type = "mining-drill",
     name = "basic-mining-drill-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/basic-mining-drill-mk2.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/basic-mining-drill-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "basic-mining-drill-mk2"},
     max_health = 600,
@@ -1012,7 +1056,7 @@ data:extend({
         height = 114,
         line_length = 8,
         shift = {0.2, -0.2},
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/basic-mining-drill/north.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/basic-mining-drill/north.png",
         frame_count = 64,
         animation_speed = 0.5,
         run_mode = "forward-then-backward",
@@ -1024,7 +1068,7 @@ data:extend({
         height = 100,
         line_length = 8,
         shift = {0.45, 0},
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/basic-mining-drill/east.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/basic-mining-drill/east.png",
         frame_count = 64,
         animation_speed = 0.5,
         run_mode = "forward-then-backward",
@@ -1036,7 +1080,7 @@ data:extend({
         height = 111,
         line_length = 8,
         shift = {0.15, 0},
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/basic-mining-drill/south.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/basic-mining-drill/south.png",
         frame_count = 64,
         animation_speed = 0.5,
         run_mode = "forward-then-backward",
@@ -1048,7 +1092,7 @@ data:extend({
         height = 100,
         line_length = 8,
         shift = {0.25, 0},
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/basic-mining-drill/west.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/basic-mining-drill/west.png",
         frame_count = 64,
         animation_speed = 0.5,
         run_mode = "forward-then-backward",
@@ -1061,9 +1105,9 @@ data:extend({
       usage_priority = "secondary-input",
       emissions = 0.5 / 10,
     },
-    energy_usage = "90kW",
+    energy_usage = "120kW",
     mining_power = 6,
-    resource_searching_radius = 2.49,
+    resource_searching_radius = 3.49,
     vector_to_place_result = {0, -1.85},
     module_specification =
     {
@@ -1082,14 +1126,15 @@ data:extend({
   {
     type = "mining-drill",
     name = "pumpjack-mk2",
-    icon = "__FactorioExtended-Core__/graphics/icons/pumpjack-mk2.png",
+    icon = "__FactorioExtended-Machines__/graphics/icons/pumpjack-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "pumpjack-mk2"},
     resource_categories = {"basic-fluid"},
     max_health = 200,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    collision_box = {{ -1.4, -1.4}, {1.4, 1.4}},
+    collision_box = {{ -1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{ -1.5, -1.5}, {1.5, 1.5}},
     drawing_box = {{-1.6, -2.5}, {1.5, 1.6}},
     energy_source =
@@ -1099,7 +1144,7 @@ data:extend({
       emissions = 0.15 / 1.5,
       usage_priority = "secondary-input"
     },
-    fluid_box =
+    output_fluid_box =
     {
       base_area = 1,
       base_level = 1,
@@ -1122,15 +1167,16 @@ data:extend({
     },
     radius_visualisation_picture =
     {
-      filename = "__FactorioExtended-Core__/graphics/entity/machine/pumpjack/pumpjack-radius-visualization.png",
+      filename = "__FactorioExtended-Machines__/graphics/entity/pumpjack/pumpjack-radius-visualization.png",
       width = 12,
       height = 12
     },
+    monitor_visualization_tint = {r=78, g=173, b=255},
     base_picture =
     {
       sheet =
       {
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/pumpjack/pumpjack-base.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/pumpjack/pumpjack-base.png",
         priority = "extra-high",
         width = 114,
         height = 113,
@@ -1146,7 +1192,7 @@ data:extend({
         height = 110,
         line_length = 10,
         shift = {0.125, -0.71875},
-        filename = "__FactorioExtended-Core__/graphics/entity/machine/pumpjack/pumpjack-animation.png",
+        filename = "__FactorioExtended-Machines__/graphics/entity/pumpjack/pumpjack-animation.png",
         frame_count = 40,
         animation_speed = 0.5
       }
@@ -1157,6 +1203,10 @@ data:extend({
       sound = { filename = "__base__/sound/pumpjack.ogg" },
       apparent_volume = 1.5,
     },
-    fast_replaceable_group = "pumpjack"
+    fast_replaceable_group = "pumpjack",
+
+    circuit_wire_connection_points = circuit_connector_definitions["pumpjack"].points,
+    circuit_connector_sprites = circuit_connector_definitions["pumpjack"].sprites,
+    circuit_wire_max_distance = 9,
   }
 })

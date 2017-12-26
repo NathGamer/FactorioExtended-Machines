@@ -16,31 +16,31 @@ data:extend({
   {
     type = "recipe",
     name = "electric-furnace-mk2",
-	enabled = false,
-	energy_required = 5,
+    enabled = false,
+    energy_required = 5,
     ingredients = 
-	{
-	  {"electric-furnace", 1},
-	  {"steel-plate", 10}, 
+    {
+      {"electric-furnace", 1},
+      {"steel-plate", 10}, 
       {"speed-module", 2},
-	  {"advanced-circuit", 10},
-	  {"pollution-filter", 1}
-	},
+      {"advanced-circuit", 10},
+      {"pollution-filter", 1}
+    },
     result = "electric-furnace-mk2"
   },
   {
     type = "recipe",
     name = "electric-furnace-mk3",
-	energy_required = 5,
+    energy_required = 5,
     enabled = false,
     ingredients = 
-	{
-	  {"electric-furnace-mk2", 1},
-	  {"titanium-alloy", 20}, 
-	  {"effectivity-module-3", 2},
-	  {"processing-unit", 5},
-	  {"pollution-filter", 1}
-	},
+    {
+      {"electric-furnace-mk2", 1},
+      {"titanium-alloy", 20}, 
+      {"effectivity-module-3", 2},
+      {"processing-unit", 5},
+      {"pollution-filter", 1}
+    },
     result = "electric-furnace-mk3"
   },
   
@@ -48,6 +48,7 @@ data:extend({
   {
     type = "recipe",
     name = "assembling-machine-4",
+    energy_required = 2.5,
     enabled = false,
     ingredients =
     {
@@ -60,6 +61,7 @@ data:extend({
   {
     type = "recipe",
     name = "assembling-machine-5",
+    energy_required = 5,
     enabled = false,
     ingredients =
     {
