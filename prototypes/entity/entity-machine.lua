@@ -1,8 +1,11 @@
+require ("circuit-connector-generated-definitions")
+
 data:extend({
   {
     type = "radar",
     name = "radar-mk2",
     icon = "__FactorioExtended-Machines__/graphics/icons/radar-mk2.png",
+    icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "radar-mk2"},
     max_health = 300,
@@ -54,6 +57,7 @@ data:extend({
     type = "furnace",
     name = "electric-furnace-mk2",
     icon = "__FactorioExtended-Machines__/graphics/icons/electric-furnace-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "electric-furnace-mk2"},
     max_health = 450,
@@ -151,6 +155,7 @@ data:extend({
     type = "furnace",
     name = "electric-furnace-mk3",
     icon = "__FactorioExtended-Machines__/graphics/icons/electric-furnace-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "electric-furnace-mk3"},
     max_health = 900,
@@ -250,6 +255,7 @@ data:extend({
     type = "assembling-machine",
     name = "assembling-machine-4",
     icon = "__FactorioExtended-Machines__/graphics/icons/assembling-machine-4.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-4"},
     max_health = 300,
@@ -333,6 +339,7 @@ data:extend({
     type = "assembling-machine",
     name = "assembling-machine-5",
     icon = "__FactorioExtended-Machines__/graphics/icons/assembling-machine-5.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-5"},
     max_health = 600,
@@ -418,6 +425,7 @@ data:extend({
     type = "assembling-machine",
     name = "oil-refinery-mk2",
     icon = "__FactorioExtended-Machines__/graphics/icons/oil-refinery-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "oil-refinery-mk2"},
     max_health = 600,
@@ -563,6 +571,7 @@ data:extend({
     type = "assembling-machine",
     name = "oil-refinery-mk3",
     icon = "__FactorioExtended-Machines__/graphics/icons/oil-refinery-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "oil-refinery-mk3"},
     max_health = 900,
@@ -710,6 +719,7 @@ data:extend({
     type = "assembling-machine",
     name = "chemical-plant-mk2",
     icon = "__FactorioExtended-Machines__/graphics/icons/chemical-plant-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-plant-mk2"},
     max_health = 600,
@@ -863,6 +873,7 @@ data:extend({
     type = "assembling-machine",
     name = "chemical-plant-mk3",
     icon = "__FactorioExtended-Machines__/graphics/icons/chemical-plant-mk3.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-plant-mk3"},
     max_health = 900,
@@ -1018,6 +1029,7 @@ data:extend({
     type = "mining-drill",
     name = "basic-mining-drill-mk2",
     icon = "__FactorioExtended-Machines__/graphics/icons/basic-mining-drill-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "basic-mining-drill-mk2"},
     max_health = 600,
@@ -1115,6 +1127,7 @@ data:extend({
     type = "mining-drill",
     name = "pumpjack-mk2",
     icon = "__FactorioExtended-Machines__/graphics/icons/pumpjack-mk2.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "pumpjack-mk2"},
     resource_categories = {"basic-fluid"},
@@ -1191,20 +1204,9 @@ data:extend({
       apparent_volume = 1.5,
     },
     fast_replaceable_group = "pumpjack",
-    circuit_wire_connection_points =
-    {
-      get_circuit_connector_wire_shifting_for_connector({0.15625, -1.0625}, {0.15625, -1.0625}, 2),
-      get_circuit_connector_wire_shifting_for_connector({0.15625, -1.0625}, {0.15625, -1.0625}, 2),
-      get_circuit_connector_wire_shifting_for_connector({0.15625, -1.0625}, {0.15625, -1.0625}, 2),
-      get_circuit_connector_wire_shifting_for_connector({0.15625, -1.0625}, {0.15625, -1.0625}, 2)
-    },
-    circuit_connector_sprites =
-    {
-      get_circuit_connector_sprites({0.15625, -1.0625}, {0.15625, -1.0625}, 2),
-      get_circuit_connector_sprites({0.15625, -1.0625}, {0.15625, -1.0625}, 2),
-      get_circuit_connector_sprites({0.15625, -1.0625}, {0.15625, -1.0625}, 2),
-      get_circuit_connector_sprites({0.15625, -1.0625}, {0.15625, -1.0625}, 2)
-    },
+
+    circuit_wire_connection_points = circuit_connector_definitions["pumpjack"].points,
+    circuit_connector_sprites = circuit_connector_definitions["pumpjack"].sprites,
     circuit_wire_max_distance = 9,
   }
 })

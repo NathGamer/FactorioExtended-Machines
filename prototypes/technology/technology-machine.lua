@@ -4,8 +4,8 @@ data:extend(
     type = "technology",
     name = "mechanical-engineer",
     icon = "__FactorioExtended-Machines__/graphics/technology/mechanical-engineer-1.png",
-	icon_size = 64,
-	prerequisites = {"automation-2", "advanced-material-processing-2", "speed-module-3", "effectivity-module-3", "productivity-module-3"},
+	  icon_size = 64,
+    prerequisites = {"automation-2", "advanced-material-processing-2", "speed-module-3", "effectivity-module-3", "productivity-module-3"},
     effects =
     {
       {
@@ -53,8 +53,8 @@ data:extend(
     type = "technology",
     name = "mechanical-engineer-2",
     icon = "__FactorioExtended-Machines__/graphics/technology/mechanical-engineer-1.png",
-	icon_size = 64,
-	prerequisites = {"mechanical-engineer", "titanium-processing"},
+    icon_size = 64,
+    prerequisites = {"mechanical-engineer", "titanium-processing"},
     effects =
     {
 	  {
