@@ -2,8 +2,8 @@ data:extend(
 {
   {
     type = "technology",
-    name = "mechanical-engineer-1",
-    icon = "__FactorioExtended-Core__/graphics/technology/mechanical-engineer-1.png",
+    name = "mechanical-engineer",
+    icon = "__FactorioExtended-Machines__/graphics/technology/mechanical-engineer-1.png",
 	icon_size = 64,
 	prerequisites = {"automation-2", "advanced-material-processing-2", "speed-module-3", "effectivity-module-3", "productivity-module-3"},
     effects =
@@ -44,17 +44,17 @@ data:extend(
 	  {"science-pack-1", 1}, 
 	  {"science-pack-2", 1}, 
 	  {"science-pack-3", 1}, 
-	  {"alien-science-pack", 1}},
-      time = 60
+	  {"high-tech-science-pack", 1}},
+      time = 30
     },
     order = "f-b-f-a"
   },
   {
     type = "technology",
     name = "mechanical-engineer-2",
-    icon = "__FactorioExtended-Core__/graphics/technology/mechanical-engineer-1.png",
+    icon = "__FactorioExtended-Machines__/graphics/technology/mechanical-engineer-1.png",
 	icon_size = 64,
-	prerequisites = {"mechanical-engineer-1"},
+	prerequisites = {"mechanical-engineer", "titanium-processing"},
     effects =
     {
 	  {
@@ -81,7 +81,7 @@ data:extend(
 	  {"science-pack-1", 1}, 
 	  {"science-pack-2", 1}, 
 	  {"science-pack-3", 1}, 
-	  {"alien-science-pack", 1}},
+	  {"high-tech-science-pack", 1}},
       time = 60
     },
     order = "f-b-f-b"

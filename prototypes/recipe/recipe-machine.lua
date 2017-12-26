@@ -48,6 +48,7 @@ data:extend({
   {
     type = "recipe",
     name = "assembling-machine-4",
+    energy_required = 2.5,
     enabled = false,
     ingredients =
     {
@@ -60,6 +61,7 @@ data:extend({
   {
     type = "recipe",
     name = "assembling-machine-5",
+    energy_required = 5,
     enabled = false,
     ingredients =
     {
