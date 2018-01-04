@@ -37,7 +37,7 @@ data:extend({
     {
       {"electric-furnace-mk2", 1},
       {"titanium-alloy", 20}, 
-      {"effectivity-module-3", 2},
+      {"effectivity-module-2", 2},
       {"processing-unit", 5},
       {"pollution-filter", 1}
     },
@@ -54,7 +54,7 @@ data:extend({
     {
       {"speed-module", 2},
       {"assembling-machine-3", 2},
-	  {"pollution-filter", 1}
+      {"pollution-filter", 1}
     },
     result = "assembling-machine-4"
   },
@@ -66,9 +66,9 @@ data:extend({
     ingredients =
     {
       {"speed-module-2", 2},
-	  {"effectivity-module-3", 2},
+      {"effectivity-module-2", 2},
       {"assembling-machine-4", 2},
-	  {"pollution-filter", 1}
+      {"pollution-filter", 1}
     },
     result = "assembling-machine-5"
   },
@@ -83,7 +83,7 @@ data:extend({
       {"oil-refinery", 1},
       {"speed-module", 2},
       {"advanced-circuit", 10},
-	  {"pollution-filter", 1}
+      {"pollution-filter", 1}
     },
     result = "oil-refinery-mk2",
     enabled = false
@@ -97,9 +97,9 @@ data:extend({
       {"oil-refinery-mk2", 1},
       {"processing-unit", 5},
       {"speed-module-2", 2},
-	  {"effectivity-module-3", 2},
-	  {"titanium-alloy", 25},
-	  {"pollution-filter", 1}
+      {"effectivity-module-2", 2},
+      {"titanium-alloy", 25},
+      {"pollution-filter", 1}
     },
     result = "oil-refinery-mk3",
     enabled = false
@@ -116,7 +116,7 @@ data:extend({
       {"chemical-plant", 1},
       {"speed-module", 2},
       {"advanced-circuit", 10},
-	  {"pollution-filter", 1}
+      {"pollution-filter", 1}
     },
     result= "chemical-plant-mk2"
   },
@@ -130,9 +130,9 @@ data:extend({
       {"chemical-plant-mk2", 1},
       {"processing-unit", 5},
       {"speed-module-2", 2},
-	  {"effectivity-module-3", 2},
-	  {"titanium-alloy", 25},
-	  {"pollution-filter", 1}
+      {"effectivity-module-2", 2},
+      {"titanium-alloy", 25},
+      {"pollution-filter", 1}
     },
     result= "chemical-plant-mk3"
   },
@@ -146,11 +146,11 @@ data:extend({
     ingredients =
     {
       {"electric-mining-drill", 1},
-	  {"advanced-circuit", 3},
+      {"advanced-circuit", 3},
       {"steel-plate", 10},
       {"speed-module", 2},
-	  {"effectivity-module", 2},
-	  {"pollution-filter", 1}
+      {"effectivity-module", 2},
+      {"pollution-filter", 1}
     },
     result = "basic-mining-drill-mk2"
   },
@@ -163,7 +163,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-	  {"pumpjack", 1},
+      {"pumpjack", 1},
       {"steel-plate", 15},
       {"advanced-circuit", 10},
       {"pipe", 10}
@@ -173,6 +173,6 @@ data:extend({
 })
 
 if data.raw.item["pipe-mk2"] then
-	factorioextended.core.remove_recipe_item ("pumpjack-mk2", "pipe")
-	factorioextended.core.add_recipe_item ("pumpjack-mk2", {"pipe-mk2", 5})
+  factorioextended.core.remove_recipe_item ("pumpjack-mk2", "pipe")
+  factorioextended.core.add_recipe_item ("pumpjack-mk2", {"pipe-mk2", 5})
 end
