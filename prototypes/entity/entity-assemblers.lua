@@ -76,10 +76,10 @@ data:extend({
             filename = "__FactorioExtended-Machines__/graphics/entity/assembling-machine/hr-assembling-machine-4.png",
             priority = "high",
             width = 214,
-            height = 218,
+            height = 237,
             frame_count = 32,
             line_length = 8,
-            shift = util.by_pixel(0, 4),
+            shift = util.by_pixel(0, -0.75),
             scale = 0.5
           }
         },
@@ -183,10 +183,10 @@ data:extend({
             filename = "__FactorioExtended-Machines__/graphics/entity/assembling-machine/hr-assembling-machine-5.png",
             priority = "high",
             width = 214,
-            height = 218,
+            height = 237,
             frame_count = 32,
             line_length = 8,
-            shift = util.by_pixel(0, 4),
+            shift = util.by_pixel(0, -0.75),
             scale = 0.5
           }
         },
